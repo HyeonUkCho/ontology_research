@@ -1,7 +1,8 @@
 # depslib dependency file v1.0
-1506492898 source:c:\users\hyunwook\desktop\대학자료\검색연구\code\test\main.c
+1511261404 source:c:\users\hyunwook\desktop\대학자료\검색연구\code\test\main.c
 	<stdio.h>
 	<string.h>
 	<stdlib.h>
 	<math.h>
+	<sys/types.h>
 

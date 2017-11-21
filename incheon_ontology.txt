@@ -1,0 +1,86 @@
+소개	인천대홈페이지	http://www.inu.ac.kr/mbshome/mbs/inu/index.do
+역사	발자취	http://www.inu.ac.kr/mbshome/mbs/inu/subview.do?id=inu_010301000000
+건학이념	대학비전	http://www.inu.ac.kr/mbshome/mbs/inu/subview.do?id=inu_010301000000
+교훈	대학비전	http://www.inu.ac.kr/mbshome/mbs/inu/subview.do?id=inu_010301000000
+비전 	대학비전	http://www.inu.ac.kr/mbshome/mbs/inu/subview.do?id=inu_010301000000
+상징	UI소개	http://www.inu.ac.kr/mbshome/mbs/inu/subview.do?id=inu_010801000000
+홍보	대학홍보관	http://www.inu.ac.kr/mbshome/mbs/inu/subview.do?id=inu_010902000000
+규칙	학칙 및 규정	http://rule.inu.ac.kr/
+인사말	총장실 인사말	http://www.inu.ac.kr/mbshome/mbs/inu/subview.do?id=inu_010201000000
+프로필	총장 프로필	http://www.inu.ac.kr/mbshome/mbs/inu/subview.do?id=inu_010202000000
+역대총장	역대총장	http://www.inu.ac.kr/mbshome/mbs/inu/subview.do?id=inu_010204000000
+현황	대학현황	http://www.inu.ac.kr/mbshome/mbs/inu/subview.do?id=inu_010601000000
+조직표	조직 및 기관	http://www.inu.ac.kr/mbshome/mbs/inu/subview.do?id=inu_010701000000
+법인	학교법인	http://www.inu.ac.kr/mbshome/mbs/inu/subview.do?id=inu_010100000000
+이사장	학교법인	http://www.inu.ac.kr/mbshome/mbs/inu/subview.do?id=inu_010100000000
+총동창회	총동창회	-
+캠퍼스안내	캠퍼스맵	http://www.inu.ac.kr/mbshome/mbs/inu/campusmap/contents/songdo.jsp
+찾아오는길	오시는길	http://www.inu.ac.kr/mbshome/mbs/inu/subview.do?id=inu_011201000000
+캠퍼스맵	캠퍼스맵	http://www.inu.ac.kr/mbshome/mbs/inu/campusmap/contents/songdo.jsp
+공지	With INU/공지사항	http://www.inu.ac.kr/user/boardList.do?boardId=48510&siteId=inu&id=inu_070201000000
+전화	교내전화/메일	http://www.inu.ac.kr/cop/haksaStaffSearch/staffSearch.do?id=inu_011001000000&section=all
+예산	대학현황 예결산공고	http://www.inu.ac.kr/mbshome/mbs/inu/subview.do?id=inu_010601000000
+취업	취업정보	https://cds.inu.ac.kr/
+역량	취업정보	https://cds.inu.ac.kr/
+봉사	사회봉사센터홈페이지	http://www.inu.ac.kr/user/indexSub.do?codyMenuSeq=197430&siteId=service
+학사	학사안내	http://www.inu.ac.kr/cop/haksa/haksaScheduleRecordList.do?handle=140774&siteId=inu&year=2017&id=inu_050201000000
+학사공지	공지사항	http://www.inu.ac.kr/user/boardList.do?boardId=48510&siteId=inu&id=inu_070201000000
+입시공지	공지사항	http://www.inu.ac.kr/user/boardList.do?boardId=48510&siteId=inu&id=inu_070201000000
+학사일정	학사안내/학사일정	http://www.inu.ac.kr/cop/haksa/haksaScheduleRecordList.do?handle=140774&siteId=inu&year=2017&id=inu_050201000000
+학칙	대학소개/ 학칙 및 규정	http://rule.inu.ac.kr/
+교육과정	수강신청	http://www.inu.ac.kr/mbshome/mbs/inu/subview.do?id=inu_050202000000
+등록금	대학안내 	http://www.inu.ac.kr/mbshome/mbs/inu/subview.do?id=inu_030000000000
+수강	수강신청	http://www.inu.ac.kr/mbshome/mbs/inu/subview.do?id=inu_050202000000
+강의평가	강의평가	-
+수강	학사안내/수강신청	www.inu.ac.kr/mbshome/mbs/inu/subview.do?id=inu_050202000000
+성적	학사안내/시험/성적	http://www.inu.ac.kr/mbshome/mbs/inu/subview.do?id=inu_050204000000
+졸업	학사안내/수료/졸업	www.inu.ac.kr/mbshome/mbs/inu/subview.do?id=inu_050214000000
+복수연계전공	학사안내/부전공/복수전공	www.inu.ac.kr/mbshome/mbs/inu/subview.do?id=inu_050208000000
+계절학기	학사안내/계절학기	http://www.inu.ac.kr/mbshome/mbs/inu/subview.do?id=inu_050205000000
+전과	학사안내/전과/전공배정	http://www.inu.ac.kr/mbshome/mbs/inu/subview.do?id=inu_050210000000
+휴복퇴학	학사안내/휴학/복학	http://www.inu.ac.kr/mbshome/mbs/inu/subview.do?id=inu_050207000000
+교환학생	공지사항	http://www.inu.ac.kr/user/boardList.do?boardId=48510&siteId=inu&id=inu_070201000000
+학점교류	학사안내/학점교류	http://www.inu.ac.kr/mbshome/mbs/inu/subview.do?id=inu_050215000000
+인증제	영어졸업인증제	http://www.inu.ac.kr/mbshome/mbs/inu/subview.do?id=inu_050213000000
+학습가이드	열린강좌	http://www.inu.ac.kr/mbshome/mbs/inu/subview.do?id=inu_050302000000
+신입생안내	학사안내	http://www.inu.ac.kr/cop/haksa/haksaScheduleRecordList.do?handle=140774&siteId=inu&year=2017&id=inu_050201000000
+증명서	증명발급	http://www.inu.ac.kr/mbshome/mbs/inu/subview.do?id=inu_050103000000
+시설	학생지원/ 생활시설	http://www.inu.ac.kr/mbshome/mbs/inu/subview.do?id=inu_050111010000
+학군단	학생지원/ 병무행정 예비군	http://www.inu.ac.kr/mbshome/mbs/inu/subview.do?id=inu_050105010000
+장애학생	학생지원/ 장애학생지원센터	http://www.inu.ac.kr/mbshome/mbs/inu/subview.do?id=inu_050115010000
+인권	총학생회	http://we.incheon.ac.kr/xe/
+동아리	동아리	http://www.inu.ac.kr/cop/groupMng/groupMngCategory.do?id=inu_050500000000
+건강	보건진료소	http://www.inu.ac.kr/mbshome/mbs/inu/subview.do?id=inu_050113010000
+편의	편의/복지	http://www.inu.ac.kr/mbshome/mbs/inu/subview.do?id=inu_050109000000
+식당	식당메뉴	http://www.inu.ac.kr/com/cop/mainWork/foodList1.do?siteId=inu&id=inu_050110010000
+정보	IT서비스	http://www.inu.ac.kr/mbshome/mbs/inu/subview.do?id=inu_050108010000
+학생회관	편의/복지	http://www.inu.ac.kr/mbshome/mbs/inu/subview.do?id=inu_050109000000
+주차	오시는길 주차정보	http://www.inu.ac.kr/mbshome/mbs/inu/subview.do?id=inu_011207000000
+장학	장학금	http://www.inu.ac.kr/mbshome/mbs/inu/subview.do?id=inu_050101010000
+장학공지	공지사항/ 장학금	http://www.inu.ac.kr/mbshome/mbs/inu/subview.do?id=inu_050101010000
+국가장학	장학금 국가장학금	http://www.inu.ac.kr/mbshome/mbs/inu/subview.do?id=inu_050101030000
+교내장학	장학금 교내장학금	http://www.inu.ac.kr/mbshome/mbs/inu/subview.do?id=inu_050101010000
+교외장학	장학금 교외장학금	http://www.inu.ac.kr/mbshome/mbs/inu/subview.do?id=inu_050101020000
+학자금대출	장학금 학자금대출	http://www.inu.ac.kr/mbshome/mbs/inu/subview.do?id=inu_050101040000
+연구	연구산학처	http://www.inu.ac.kr/mbshome/mbs/inu/subview.do?id=inu_060100000000
+산학협력단	산학협력단	http://www.inu.ac.kr/mbshome/mbs/inu/subview.do?id=inu_060200000000
+연구처	연구산학처	http://www.inu.ac.kr/mbshome/mbs/inu/subview.do?id=inu_060100000000
+연구기관	연구산학처	http://www.inu.ac.kr/mbshome/mbs/inu/subview.do?id=inu_060100000000
+연구제도	연구산학처	http://www.inu.ac.kr/mbshome/mbs/inu/subview.do?id=inu_060100000000
+LINC+	LINC+	-
+산학	산학협력단	http://www.inu.ac.kr/mbshome/mbs/inu/subview.do?id=inu_060200000000
+국제	국제	-
+어학원	열린강좌/외국어 교육센터	http://www.inu.ac.kr/cop/foreign/courseClassMainList.do?siteId=lang&codyMenuSeq=104461&id=inu_050301000000
+공지	공지사항	http://www.inu.ac.kr/user/boardList.do?boardId=48510&siteId=inu&id=inu_070201000000
+학생	학생서비스지킴이	http://www.inu.ac.kr/mbshome/mbs/inu/subview.do?id=inu_210500000000
+학사공지	공지사항/학사	http://www.inu.ac.kr/user/boardList.do?boardId=48510&siteId=inu&id=inu_070201000000
+장학공지	공지사항/장학금	http://www.inu.ac.kr/user/boardList.do?boardId=48510&siteId=inu&id=inu_070201000000
+상담	학생서비스지킴이	http://www.inu.ac.kr/mbshome/mbs/inu/subview.do?id=inu_210500000000
+봉사	공지사항/ 봉사	http://www.inu.ac.kr/user/boardList.do?boardId=48510&siteId=inu&id=inu_070201000000
+입시	입학안내	http://www.inu.ac.kr/mbshome/mbs/ipsi/index.do
+학부입학	입학안내	http://www.inu.ac.kr/mbshome/mbs/ipsi/index.do
+대학원입학	대학원(전기/후기)	http://www.inu.ac.kr/user/indexMain.do?siteId=grad
+평생교육원입학	열린강좌/평생교육원	http://www.inu.ac.kr/mbshome/mbs/inu/subview.do?id=inu_050305000000
+<단과대학 리스트 작성>	대학안내/전체대학	http://www.inu.ac.kr/mbshome/mbs/inu/subview.do?id=inu_030000000000
+<대학원 리스트 작성>	대학원안내/대학원전체	http://www.inu.ac.kr/mbshome/mbs/inu/subview.do?id=inu_040900000000
+<부속기관 리스트 작성>	부속기관	http://www.inu.ac.kr/cop/foreign/courseClassMainList.do?siteId=lang&codyMenuSeq=104461&id=inu_050301000000

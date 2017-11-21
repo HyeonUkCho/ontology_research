@@ -2,6 +2,7 @@
 #include <string.h>    // strlen, memset 함수가 선언된 헤더 파일
 #include <stdlib.h>
 #include <math.h>
+#include <sys/types.h>
 #define _CRT_SECURE_NO_WARNINGS    // fopen 보안 경고로 인한 컴파일 에러 방지
 
 int MAX_SIZE = 100;
@@ -20,6 +21,7 @@ typedef struct keynode{
 
 typedef struct urlnode{
     char url[200];
+    char title[100];
     urlnodeptr nexturl;
 }urlnode;
 
@@ -73,20 +75,21 @@ keynodeptr create_keynode(unsigned char* keyword){
     return newnode;
 }
 
-urlnodeptr create_urlnode(char url[]){
+urlnodeptr create_urlnode(char title[], char url[]){
     urlnodeptr newnode = (urlnodeptr)malloc(sizeof(urlnode));
     if(newnode == NULL){
         printf("메모리 부족\n");
         exit(1);
     }
     strcpy(newnode->url,url);
+    strcpy(newnode->title,title);
     newnode->nexturl = NULL;
     return newnode;
 }
 
 int add_keynode(hashtableptr ht, unsigned char* keyword){
     int collision_check = 0;
-    int addr = hash(keyword) % ht->tablesize;//get_digit(ht->tablesize);
+    int addr = hash(keyword) % ht->tablesize; //get_digit(ht->tablesize);
     printf("%s addr : %d",keyword,addr);
     keynodeptr newkeynode = create_keynode(keyword);
     if(ht->arr[addr] == NULL){
@@ -106,6 +109,7 @@ int add_keynode(hashtableptr ht, unsigned char* keyword){
 
 keynodeptr search_keynode(hashtableptr ht, unsigned char* keyword){
     int addr = hash(keyword) % ht->tablesize;
+    printf("%s addr : %d \n",keyword,addr);
     keynodeptr target = ht->arr[addr];
     if(target == NULL){
         printf("not existed!\n");
@@ -132,9 +136,9 @@ int search_urlnode(urlnodeptr rootnode, unsigned char* url){
     }
 }
 
-int add_urlnode(hashtableptr ht,unsigned char* keyword,char* url){
+int add_urlnode(hashtableptr ht,unsigned char* keyword,char* title,char* url){
     int i;
-    urlnodeptr newnode = create_urlnode(url);
+    urlnodeptr newnode = create_urlnode(title,url);
     keynodeptr result = search_keynode(ht,keyword);
     if(result == NULL){
         i=0;
@@ -156,7 +160,7 @@ int add_urlnode(hashtableptr ht,unsigned char* keyword,char* url){
 void print_urlnode(urlnodeptr unp){
     urlnodeptr temp = unp;
     while(temp != NULL){
-        printf("%s -> ",temp->url);
+        printf("[%s] : %s -> ",temp->title,temp->url);
         temp = temp->nexturl;
     }
     printf("\n");
@@ -183,7 +187,7 @@ void print_hashtable(hashtableptr ht){
 int FILE_SIZE = 0;
 int main()
 {
-    FILE *fp = fopen("incheon.txt", "r");
+    FILE *fp = fopen("incheon_ontology.txt", "r");
 
     if(fp == NULL) {
         printf("topic File is not opened");
@@ -196,63 +200,83 @@ int main()
     fseek(fp,0,SEEK_SET);
     printf("file size is %d\n",FILE_SIZE);
 
-    //make hashtable
+    //create hashtable
     hashtableptr ht = create_hashtable(FILE_SIZE);
 
-    //insert topic
+    //insert keyword, title, url
     int i=0;
     int cnt_collision = 0;
     while (!feof(fp)){
-        unsigned char* inp = (unsigned char*)malloc(sizeof(unsigned char)*MAX_SIZE);
-        fscanf(fp,"%s",inp);
-        int index = hash(inp);
-        //printf(" %u ",index);
-        //printf("%s\n",inp);
+        unsigned char* keyword = (unsigned char*)malloc(sizeof(unsigned char)*MAX_SIZE);
+        unsigned char* title = (unsigned char*)malloc(sizeof(unsigned char)*MAX_SIZE);
+        unsigned char* url = (unsigned char*)malloc(sizeof(unsigned char)*MAX_SIZE);
+        fscanf(fp,"%[^\t]\t%[^\t]\t%s\n",keyword,title,url);
 
-        cnt_collision += add_keynode(ht,inp);
-        free(inp);
+        printf("%s , %s , %s\n",keyword,title,url);
+        // int index = hash(keyword);
+        // printf(" %u ",index);
+        // printf("%s\n",inp);
+
+        cnt_collision += add_keynode(ht,keyword);
+        int check = add_urlnode(ht,keyword,title,url);
+        if(!check){
+            printf("cannot find word\n");
+        }
+        free(keyword);
+        free(title);
+        free(url);
     }
 
     fclose(fp);
-    printf("%d\n",cnt_collision);
+    // printf("%d\n",cnt_collision);
 
-    fp = fopen("incheon_sample_2.txt", "r");
+//    fp = fopen("인천대학교_table_keyword_URL.txt", "r");
+//
+//    if(fp == NULL) {
+//        printf("Keyword_URL File is not opened");
+//        exit(1);
+//    }
+//
+//    //insert url
+//    int j=0;
+//    while(!feof(fp)){
+//        //unsigned char* search_word = (unsigned char*)malloc(sizeof(unsigned char)*MAX_SIZE);
+//        unsigned char* inp_topic = (unsigned char*)malloc(sizeof(unsigned char)*MAX_SIZE);
+//        unsigned char* inp_url = (unsigned char*)malloc(sizeof(unsigned char)*MAX_SIZE);
+//        fscanf(fp,"%s\t%s",inp_topic,inp_url);
+//        printf("%d. %s\t%s\n",j++,inp_topic,inp_url);
+//        int check = add_urlnode(ht,inp_topic,inp_url);
+//        if(!check){
+//            printf("cannot find word\n");
+//        }
+//    }
+
+    print_hashtable(ht);
+
+    fp = fopen("incheon_searchword.txt", "r");
 
     if(fp == NULL) {
         printf("topic File is not opened");
         exit(1);
     }
 
-    //insert url
-    int j=0;
-    while(!feof(fp)){
-        unsigned char* search_word = (unsigned char*)malloc(sizeof(unsigned char)*MAX_SIZE);
-        unsigned char* inp_topic = (unsigned char*)malloc(sizeof(unsigned char)*MAX_SIZE);
-        unsigned char* inp_url = (unsigned char*)malloc(sizeof(unsigned char)*MAX_SIZE);
-        fscanf(fp,"%s\t%s\t%s",search_word,inp_topic,inp_url);
-        //printf("%d. %s\t%s\t%s\n",j++,search_word,inp_topic,inp_url);
-        int check = add_urlnode(ht,inp_topic,inp_url);
-        if(!check){
-            printf("cannot find word\n");
-        }
-    }
-
-    print_hashtable(ht);
-
-    fseek(fp,0,SEEK_SET);
+    //fseek(fp,0,SEEK_SET);
 
     //input search word and return url
     printf("\n==============================================================\n");
     while(!feof(fp)){
         unsigned char* search_word = (unsigned char*)malloc(sizeof(unsigned char)*MAX_SIZE);
-        unsigned char* inp_topic = (unsigned char*)malloc(sizeof(unsigned char)*MAX_SIZE);
-        unsigned char* inp_url = (unsigned char*)malloc(sizeof(unsigned char)*MAX_SIZE);
-        fscanf(fp,"%s\t%s\t%s",search_word,inp_topic,inp_url);
-        keynodeptr result = search_keynode(ht,inp_topic);
+        unsigned char* keyword = (unsigned char*)malloc(sizeof(unsigned char)*MAX_SIZE);
+        fscanf(fp,"%[^\t]\t%s",search_word,keyword);
+        keynodeptr result = search_keynode(ht,keyword);
         printf("%s_url : ",search_word);
-        print_urlnode(result->nexturl);
+        if(result == NULL)
+            printf("cannot find\n");
+        else
+            print_urlnode(result->nexturl);
         printf("\n");
     }
+
     fclose(fp);
     free(ht);
     return 0;
